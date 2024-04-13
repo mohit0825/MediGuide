@@ -9,6 +9,81 @@ body {
     background-color: #f0f0f0;
 }
 
+section{
+    padding: 20px;
+    background-image: url('abtusbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+    text-align: center;
+}
+
+.content-left h1{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 2.5rem;
+}
+
+.content-left h2{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.sec2{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2rem;
+}
+
+#aidc1{
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    height: 35%;
+    width: 45%;
+    border-radius: 10px;
+}
+
+#aidc2{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    height: 30%;
+    width: 22.5%;
+    border-radius: 10px;
+}
+
+#aidc3{
+    position: absolute;
+    top: 117%;
+    left: 75%;
+    height: 28%;
+    width: 18.5%;
+    border-radius: 10px;
+}
+
+#para1{
+    margin-top: 1%;
+    font-size: 1.5rem;
+}
+
+#para2{
+    color: grey;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    max-width: 45%;
+}
+
+
 nav {
     position: relative;
     top: 1%;
@@ -18,7 +93,7 @@ nav {
     justify-content: center;
     margin-top: 20px; 
     border-radius: 20px;
-    width: 30%; 
+    width: 25%; 
     background-color: rgba(95, 228, 240, 0.3); 
     backdrop-filter: blur(10px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
