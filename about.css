@@ -93,6 +93,8 @@ nav {
     justify-content: center;
     margin-top: 20px; 
     border-radius: 20px;
+    height: 40px;
+    font-size: 1.1rem;
     width: 25%; 
     background-color: rgba(95, 228, 240, 0.3); 
     backdrop-filter: blur(10px); 
