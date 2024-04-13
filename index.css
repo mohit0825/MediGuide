@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+section {
+    padding: 20px;
+    background-image: url('heroBg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 780px;
+}
+
+.content-left{
+    color: white;
+    margin-top: 10%;
+    margin-left: 4%;
+}
+
+.content-left h1{
+    font-size: 5rem;
+}
+
+.content-left p{
+    margin-top: 1%;
+}
+
+.joinusbtn{
+    background-color: #3B81F6;
+    height: 60px;
+    width: 150px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 6%;
+    border-width: 0px;
+    border-radius: 40px;
+}
+
+.callbtn{
+    height: 60px;
+    width: 250px;
+    color: white;
+    background-color: transparent;
+    border-radius: 40px;
+    border-color: white;
+    margin-left: 1%;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.phone-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.prom ul{
+    list-style: none;
+    display: flex;
+}
+
+.prom ul li{
+    margin: 20px;
+}
+
+.prom{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.tick{
+    color: greenyellow;
+    height: 30px;
+    width: 30px;
+}
+
+.sec2{
+    margin: 5%;
+    font-size: 2rem;
+}
+
+#aidc1{
+    height: 50%;
+    width: 43%;
+    border-radius: 10px;
+}
+
+#aidc2{
+    position: relative;
+    margin-left: 5%;
+    /*transform: translate(-10%, -50%);*/
+    height: 50%;
+    width: 43%;
+    border-radius: 10px;
+}
+
+nav {
+    position: relative;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+    border-radius: 20px;
+    width: 40%; 
+    background-color: rgba(95, 228, 240, 0.3); 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+nav ul li {
+    margin: 0;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+ 
+:-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: #007bff; 
+    border-radius: 10px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; 
+}
+
