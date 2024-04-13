@@ -1,32 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Responsive Page Design</title>
+    <link rel="shortcut icon" type="image/jpg" href="news2.png"/>
+    <style>
+        /* Set the background color of the body to blue */
+        body {
+            background-color: #3B81F6;
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+
+        /* Style for the navigation bar */
+        header nav {
+            background-color: green;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        header nav ul li a:hover {
+            background-color: #095a55; /* Darker shade of green on hover */
+        }
+
+        /* Add the rest of your CSS styling from style.css here */
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            position: relative; /* Ensure that the pseudo-element is positioned relative to the section */
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: #3B81F6; /* Change background color to blue */
+        }
+
+        /* Add the rest of your CSS styling from style.css here */
+        /* Ensure you include the entire CSS file's content here */
+    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+    <header>
+        <!-- Updated Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section>
-      <h2>Contact Us</h2>
-      <p>Get in touch with us.</p>
+        <div class="container">
+            <div class="contactInfo"> 
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><img src="location.png"></span>
+                            <span>Arch Gate Srm<br>
+                                Ktr , Chennai<br>
+                                603203</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span><img src="mail.png"></span>
+                            <!-- <span>MediGuide@gmail.com</span> -->
+                            <span><a href="mailto: MediGuide@gmail.com">MediGuide@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <span><img src="call.png"></span>
+                            <span>830-212-2932</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/nassosanagn/"><img src="1.png"></a></li>
+                    <li><a href="https://www.instagram.com/nassosanagn_/?hl=el"><img src="3.png"></a></li>
+                    <li><a href="https://twitter.com/nassosanagn"><img src="2.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/nassos-anagnostopoulos-2b9631196/"><img src="5.png"></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <input type="text" name="" required>
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 My Website. All rights reserved.</p>
-  </footer>
 </body>
 </html>
