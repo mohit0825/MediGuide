@@ -3,43 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Service Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db; /* Blue background */
+        }
+        nav {
+            position: relative;
+            top: 1%;
+            left: 50%;
+            transform: translate(-50%, -1%);
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; 
+            border-radius: 20px;
+            width: 30%; 
+            background-color: rgba(95, 228, 240, 0.3); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+          
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+          
+        nav ul li {
+            margin: 0;
+        }
+          
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fff; /* White background for containers */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Drop shadow */
+        }
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden; /* Hide overflowing content */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .info {
+            max-width: 400px;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        .container:nth-child(even) .box {
+            order: -1; /* Reverse order for even containers */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Your Website Header</h1>
-        <!-- Navigation Links -->
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <script>
-            window.embeddedChatbotConfig = {
-            chatbotId: "kfGQ1kK8IPNQx3hlWDdpy",
-            domain: "www.chatbase.co"
-            }
-            </script>
-            <script
-            src="https://www.chatbase.co/embed.min.js"
-            chatbotId="kfGQ1kK8IPNQx3hlWDdpy"
-            domain="www.chatbase.co"
-            defer>
-            </script>
-        
-        <!-- Page Content Goes Here -->
-        <h2>Welcome to Your Website!</h2>
-        <p>This is the content of your website page. You can add more content here.</p>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
-    </footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <video controls>
+                <source src="video 1 watch video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="info">
+            <h2>HealthGuard Wearable Watch</h2>
+            <p>Introducing the "HealthGuard Wearable Watch," a state-of-the-art health monitoring device designed to keep you informed about vital aspects of your well-being. This cutting-edge wearable seamlessly integrates into your daily routine, providing continuous tracking of key health metrics such as heart rate, steps taken, and sleep cycles. With its advanced sensors and algorithms, the watch can detect irregular heart rhythms and issue alerts for potential cardiac issues, ensuring timely medical intervention. Additionally, it offers hydration monitoring to prevent dehydration and personalized sleep analysis to optimize your rest. Sleek in design and packed with features, the HealthGuard Watch empowers you to take control of your health proactively, wherever life takes you.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <h2>HydraGuard Smart Bottle</h2>
+            <p>The Smart Water Bottle is an innovative hydration solution designed to revolutionize the way we stay hydrated and maintain optimal health. Equipped with advanced technology, this intelligent bottle helps users track and maintain their hydration levels throughout the day. With its integrated sensors and smart monitoring system, the Smart Water Bottle provides real-time feedback and reminders to ensure users drink enough water to stay adequately hydrated. Additionally, this versatile bottle features temperature control capabilities, allowing users to maintain specific temperatures for their beverages, whether it's keeping water cool during workouts or enjoying a hot beverage on a cold day. With its sleek design and intuitive features, the Smart Water Bottle is the perfect companion for anyone looking to prioritize their health and wellness by staying hydrated and enjoying beverages at their preferred temperature.</p>
+        </div>
+        <div class="box">
+            <video controls>
+                <source src="smart water bottle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <video controls>
+                <source src="head band.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="info">
+            <h2>MindSync Neuroband</h2>
+            <p>The Muse Headband is a cutting-edge healthtech product that revolutionizes the way we monitor and understand our body's vital signs. Designed to measure brain waves and heart rate, the Muse Headband provides users with comprehensive insights into their overall health and well-being. By analyzing real-time data, this innovative device offers valuable information about various medical conditions, including stress levels, cognitive function, and emotional state. With its non-invasive design and user-friendly interface, the Muse Headband empowers individuals to take control of their health by providing actionable insights and personalized recommendations. Whether you're looking to manage stress, improve cognitive performance, or optimize your overall health, the Muse Headband is your trusted companion on the journey to wellness.</p>
+        </div>
+    </div>
 </body>
 </html>
