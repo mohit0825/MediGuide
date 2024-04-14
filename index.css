@@ -104,6 +104,12 @@ button:hover {
     height: 70vh;
     width: 39vw;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#aidc1:hover {
+    transform: scale(1.05);
+    border: 2px solid #2980b9;   
 }
 
 #aidc2 {
@@ -111,6 +117,35 @@ button:hover {
     height: 57vh;
     width: 45vw;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#aidc2:hover {
+    transform: scale(1.05);
+    border: 2px solid #2980b9; 
+}#aidc1 {
+    height: 70vh;
+    width: 39vw;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#aidc1:hover {
+    transform: scale(1.05);
+    border: 2px solid #2980b9; 
+}
+
+#aidc2 {
+    margin-top: 2%;
+    height: 57vh;
+    width: 45vw;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#aidc2:hover {
+    transform: scale(1.05);
+    border: 2px solid #2980b9; 
 }
 
 .sec2 p {
