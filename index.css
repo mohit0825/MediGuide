@@ -87,6 +87,7 @@ button:hover {
 }
 
 .sec2 {
+<<<<<<<<< Temporary merge branch 1
     display: flex;
     margin-top: 10%;
     margin-left: 5%;
@@ -94,6 +95,7 @@ button:hover {
     font-size: 2rem;
 }
 
+<<<<<<<<< Temporary merge branch 1
 .sec2u1,
 .sec2u2{
     flex: 1;
@@ -283,7 +285,11 @@ nav ul li a {
     width: 10px;
 }
 
+<<<<<<<<< Temporary merge branch 1
 :-webkit-scrollbar-track {
+=========
+::-webkit-scrollbar-track {
+>>>>>>>>> Temporary merge branch 2
     background: #f1f1f1;
 }
 
@@ -334,7 +340,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Styles */
 
 @media only screen and (max-width: 768px) {
     section {
@@ -404,3 +409,5 @@ footer {
         flex-direction: column;
     }
 }
+=========
+>>>>>>>>> Temporary merge branch 2
