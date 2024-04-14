@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,56 +12,64 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #3498db; /* Blue background */
-            color: #fff; /* White text color */
+            background-color: #3498db;
+            /* Blue background */
+            color: #fff;
+            /* White text color */
             line-height: 1.6;
-            overflow-x: hidden; /* Hide horizontal scrollbar */
+            overflow-x: hidden;
+            /* Hide horizontal scrollbar */
         }
-        
+
         /* Navigation */
         nav {
-            background-color: #2980b9; /* Darker blue background */
+            background-color: #2980b9;
+            /* Darker blue background */
             padding: 20px;
             display: flex;
-            justify-content: space-between; /* Align to both ends */
+            justify-content: space-between;
+            /* Align to both ends */
             align-items: center;
             position: fixed;
             top: 0;
             width: 100%;
-            z-index: 999; /* Ensure it's above other content */
+            z-index: 999;
+            /* Ensure it's above other content */
         }
-        
+
         .logo {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 24px;
             font-weight: bold;
             color: #fff;
         }
-        
+
         nav ul {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
-        
+
         nav ul li {
             margin-right: 20px;
         }
-        
+
         nav ul li a {
             text-decoration: none;
-            color: #fff; /* White text color */
+            color: #fff;
+            /* White text color */
             padding: 10px 20px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
-        
+
         nav ul li a:hover {
-            background-color: #1a5276; /* Darker background on hover */
+            background-color: #1a5276;
+            /* Darker background on hover */
         }
 
         /* Container Styles */
@@ -68,80 +77,136 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 120px auto 50px; /* Adjusted margin for footer */
+            margin: 120px auto 50px;
+            /* Adjusted margin for footer */
             max-width: 1200px;
             padding: 20px;
-            background-color: #fff; /* White background */
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            background-color: #fff;
+            /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            /* Soft shadow */
             border-radius: 10px;
-            overflow: hidden; /* Hide overflowing content */
+            overflow: hidden;
+            /* Hide overflowing content */
             transition: transform 0.3s ease;
             position: relative;
         }
-        
+
         .container:hover {
-            transform: translateY(-5px); /* Lift up on hover */
+            transform: translateY(-5px);
+            /* Lift up on hover */
         }
-        
+
         .box {
             flex: 1;
             margin: 0 20px;
         }
-        
+
         .box video {
             width: 100%;
             border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            /* Soft shadow */
             transition: transform 0.3s ease;
         }
-        
+
         .box video:hover {
-            transform: scale(1.05); /* Zoom in on hover */
+            transform: scale(1.05);
+            /* Zoom in on hover */
         }
-        
+
         .info {
             flex: 1;
             padding: 20px;
-            color: #000; /* Black text color */
+            color: #000;
+            /* Black text color */
         }
-        
+
         .info h2 {
-            color: #3498db; /* Blue heading color */
+            color: #3498db;
+            /* Blue heading color */
             margin-bottom: 20px;
         }
-        
+
         .info p {
             margin-bottom: 20px;
         }
 
         /* Footer */
         footer {
-            background-color: #2980b9; /* Darker blue background */
+            color: white;
+            background-color: #2980b9;
+            margin-top: 5%;
             padding: 40px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
-        
-        .footer-links {
-            margin-bottom: 20px;
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
         }
-        
-        .footer-links a {
-            color: #fff;
+
+        .footer-links ul,
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .footer-links h3,
+        .contact-info h3,
+        .social-media h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a,
+        .contact-info p {
+            color: white;
             text-decoration: none;
-            margin: 0 10px;
         }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+
+        :-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+
+        ::-webkit-scrollbar-thumb {
+            background: #007bff;
+            border-radius: 10px;
+        }
+
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0056b3;
+        }
+
 
         /* Animations */
         @keyframes boxAnimation {
             0% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-20px);
             }
+
             100% {
                 transform: translateY(0);
             }
@@ -152,6 +217,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -176,14 +242,30 @@
         </div>
         <div class="info">
             <h2>HealthGuard Wearable Watch</h2>
-            <p>Introducing the "HealthGuard Wearable Watch," a state-of-the-art health monitoring device designed to keep you informed about vital aspects of your well-being. This cutting-edge wearable seamlessly integrates into your daily routine, providing continuous tracking of key health metrics such as heart rate, steps taken, and sleep cycles. With its advanced sensors and algorithms, the watch can detect irregular heart rhythms and issue alerts for potential cardiac issues, ensuring timely medical intervention. Additionally, it offers hydration monitoring to prevent dehydration and personalized sleep analysis to optimize your rest. Sleek in design and packed with features, the HealthGuard Watch empowers you to take control of your health proactively, wherever life takes you.</p>
+            <p>Introducing the "HealthGuard Wearable Watch," a state-of-the-art health monitoring device designed to
+                keep you informed about vital aspects of your well-being. This cutting-edge wearable seamlessly
+                integrates into your daily routine, providing continuous tracking of key health metrics such as heart
+                rate, steps taken, and sleep cycles. With its advanced sensors and algorithms, the watch can detect
+                irregular heart rhythms and issue alerts for potential cardiac issues, ensuring timely medical
+                intervention. Additionally, it offers hydration monitoring to prevent dehydration and personalized sleep
+                analysis to optimize your rest. Sleek in design and packed with features, the HealthGuard Watch empowers
+                you to take control of your health proactively, wherever life takes you.</p>
         </div>
     </div>
 
     <div class="container">
         <div class="info">
             <h2>HydraGuard Smart Bottle</h2>
-            <p>The Smart Water Bottle is an innovative hydration solution designed to revolutionize the way we stay hydrated and maintain optimal health. Equipped with advanced technology, this intelligent bottle helps users track and maintain their hydration levels throughout the day. With its integrated sensors and smart monitoring system, the Smart Water Bottle provides real-time feedback and reminders to ensure users drink enough water to stay adequately hydrated. Additionally, this versatile bottle features temperature control capabilities, allowing users to maintain specific temperatures for their beverages, whether it's keeping water cool during workouts or enjoying a hot beverage on a cold day. With its sleek design and intuitive features, the Smart Water Bottle is the perfect companion for anyone looking to prioritize their health and wellness by staying hydrated and enjoying beverages at their preferred temperature.</p>
+            <p>The Smart Water Bottle is an innovative hydration solution designed to revolutionize the way we stay
+                hydrated and maintain optimal health. Equipped with advanced technology, this intelligent bottle helps
+                users track and maintain their hydration levels throughout the day. With its integrated sensors and
+                smart monitoring system, the Smart Water Bottle provides real-time feedback and reminders to ensure
+                users drink enough water to stay adequately hydrated. Additionally, this versatile bottle features
+                temperature control capabilities, allowing users to maintain specific temperatures for their beverages,
+                whether it's keeping water cool during workouts or enjoying a hot beverage on a cold day. With its sleek
+                design and intuitive features, the Smart Water Bottle is the perfect companion for anyone looking to
+                prioritize their health and wellness by staying hydrated and enjoying beverages at their preferred
+                temperature.</p>
         </div>
         <div class="box animated-box">
             <video controls>
@@ -202,26 +284,56 @@
         </div>
         <div class="info">
             <h2>MindSync Neuroband</h2>
-            <p>The Muse Headband is a cutting-edge healthtech product that revolutionizes the way we monitor and understand our body's vital signs. Designed to measure brain waves and heart rate, the Muse Headband provides users with comprehensive insights into their overall health and well-being. By analyzing real-time data, this innovative device offers valuable information about various medical conditions, including stress levels, cognitive function, and emotional state. With its non-invasive design and user-friendly interface, the Muse Headband empowers individuals to take control of their health by providing actionable insights and personalized recommendations. Whether you're looking to manage stress, improve cognitive performance, or optimize your overall health, the Muse Headband is your trusted companion on the journey to wellness.</p>
+            <p>The Muse Headband is a cutting-edge healthtech product that revolutionizes the way we monitor and
+                understand our body's vital signs. Designed to measure brain waves and heart rate, the Muse Headband
+                provides users with comprehensive insights into their overall health and well-being. By analyzing
+                real-time data, this innovative device offers valuable information about various medical conditions,
+                including stress levels, cognitive function, and emotional state. With its non-invasive design and
+                user-friendly interface, the Muse Headband empowers individuals to take control of their health by
+                providing actionable insights and personalized recommendations. Whether you're looking to manage stress,
+                improve cognitive performance, or optimize your overall health, the Muse Headband is your trusted
+                companion on the journey to wellness.</p>
         </div>
     </div>
     <script>
         window.embeddedChatbotConfig = {
-          chatbotId: "kfGQ1kK8IPNQx3hlWDdpy",
-          domain: "www.chatbase.co"
+            chatbotId: "kfGQ1kK8IPNQx3hlWDdpy",
+            domain: "www.chatbase.co"
         }
-      </script>
-      <script src="https://www.chatbase.co/embed.min.js" chatbotId="kfGQ1kK8IPNQx3hlWDdpy" domain="www.chatbase.co" defer>
-      </script>
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="kfGQ1kK8IPNQx3hlWDdpy" domain="www.chatbase.co" defer>
+    </script>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Products</a>
-            <a href="contact.html">Contact</a>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: mediguide@gmail.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><img src="1.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="2.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="3.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MediGuide. All rights reserved.</p>
         </div>
     </footer>
 </body>
+
 </html>
