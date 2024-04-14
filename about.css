@@ -82,6 +82,66 @@ section{
     font-size: 1.2rem;
     max-width: 45%;
 }
+.sec3 {
+    display: flex;
+    margin-top: 10%;
+}
+
+#aidc4 {
+    margin-left: 5%;
+    border-radius: 10px;
+    height: 600px;
+    width: 60%;
+}
+
+.sec3-content {
+    margin-left: 5%;
+}
+
+.sec3 h1 {
+    font-size: 3rem;
+    margin-top: 3%;
+}
+
+.sec3 p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+.custserv{
+    display: flex;
+    margin-top: 10%;
+}
+
+.custservunder{
+    margin-left: 3%;
+}
+
+.custserv svg{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    color: white;
+    border-radius: 100px;
+}
+
+.custserv2{
+    display: flex;
+    margin-top: 10%;
+}
+
+.custserv2under{
+    margin-left: 3%;
+}
+
+.custserv2 svg{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    color: white;
+    border-radius: 100px;
+}
 
 
 nav {
