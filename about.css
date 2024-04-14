@@ -38,36 +38,37 @@ section{
 }
 
 .sec2{
+    display: flex;
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 2rem;
 }
 
+.sec2-under,
+.sec2-under2{
+    flex: 1;
+}
+.sec2-under2{
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
 #aidc1{
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    height: 35%;
-    width: 45%;
+    height: 37vh;
+    width: 45vw;
     border-radius: 10px;
 }
 
 #aidc2{
-    position: absolute;
-    top: 115%;
-    left: 50%;
-    height: 30%;
-    width: 22.5%;
+    height: 30vh;
+    width: 22.5vw;
     border-radius: 10px;
 }
 
 #aidc3{
-    position: absolute;
-    top: 117%;
-    left: 75%;
-    height: 28%;
-    width: 18.5%;
+    height: 28vh;
+    width: 18.5vw;
     border-radius: 10px;
 }
 
@@ -80,7 +81,72 @@ section{
     color: grey;
     margin-top: 5%;
     font-size: 1.2rem;
-    max-width: 45%;
+}
+.sec3 {
+    display: flex;
+    margin-top: 10%;
+}
+
+
+.sec3{
+    display: flex;
+    margin-left: 5%;
+}
+
+.sec3-cont,
+.sec3-content{
+    flex: 1;
+}
+
+#aidc4 {
+    border-radius: 10px;
+    height: 80vh;
+    width: 40vw;
+}
+
+.sec3 h1 {
+    font-size: 3rem;
+    margin-top: 3%;
+}
+
+.sec3 p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+.custserv{
+    display: flex;
+    margin-top: 10%;
+}
+
+.custservunder{
+    margin-left: 3%;
+}
+
+.custserv svg{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    color: white;
+    border-radius: 100px;
+}
+
+.custserv2{
+    display: flex;
+    margin-top: 10%;
+}
+
+.custserv2under{
+    margin-left: 3%;
+}
+
+.custserv2 svg{
+    height: 60px;
+    width: 60px;
+    background-color: green;
+    color: white;
+    border-radius: 100px;
 }
 
 
@@ -175,4 +241,40 @@ footer {
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-left h1 {
+        font-size: 2rem;
+    }
+    
+    .content-left h2 {
+        font-size: 1.5rem;
+    }
+
+    .sec2 {
+        flex-direction: column;
+    }
+
+    #aidc1,
+    #aidc2,
+    #aidc3,
+    #aidc4 {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .sec3 {
+        flex-direction: column;
+    }
+
+    .custserv,
+    .custserv2 {
+        flex-direction: column;
+    }
+
+    .custserv svg,
+    .custserv2 svg {
+        margin-top: 10px;
+    }
 }
