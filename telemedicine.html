@@ -10,61 +10,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
-            /* Light Blue background */
+            background-color: #f0f8ff; /* Light Blue background */
         }
 
         header {
-            background-color: #4682b4;
-            /* Darker Blue Header */
+            background-color: #4682b4; /* Darker Blue Header */
             color: white;
             padding: 10px 0;
             text-align: center;
-        }
-
-        nav {
-            background-color: #2980b9;
-            /* Darker blue background */
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            /* Align to both ends */
-            align-items: center;
-            top: 0;
-            z-index: 999;
-            /* Ensure it's above other content */
-        }
-
-        .logo {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 24px;
-            font-weight: bold;
-            color: #fff;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-right: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            /* White text color */
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: #1a5276;
-            /* Darker background on hover */
         }
 
         .container {
@@ -73,122 +26,125 @@
             padding: 20px;
         }
 
-        h1,
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
         h2 {
             text-align: center;
+            margin-top: 40px;
         }
 
-        p {
-            text-align: justify;
-        }
-
-        footer {
-            color: white;
-            background-color: #2980b9;
-            margin-top: 5%;
-            padding: 40px 0;
-            width: 100%;
-        }
-
-        .footer-content {
+        .doctor-section {
             display: flex;
-            justify-content: space-around;
-            width: 100%;
-        }
-
-        .footer-links ul,
-        .social-media ul {
-            list-style: none;
-            padding: 0;
-            text-align: center;
-        }
-
-        .footer-links h3,
-        .contact-info h3,
-        .social-media h3 {
-            color: white;
-            margin-bottom: 10px;
-        }
-
-        .footer-links a,
-        .contact-info p {
-            color: white;
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-bottom {
+            justify-content: center;
+            flex-wrap: wrap;
             margin-top: 20px;
-            text-align: center;
         }
 
-        .footer-bottom p {
+        .doctor {
+            width: 45%; /* Adjusted width for proper alignment */
+            margin-bottom: 20px;
             text-align: center;
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 10px; /* Add border radius */
+            padding: 20px; /* Add padding */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Transition for background color and box shadow */
+        }
+
+        .doctor img {
+            width: 70%; /* Adjusted width for the image */
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .doctor p {
+            margin-top: 10px;
+        }
+
+        .doctor:hover {
+            background-color: #f8f8f8; /* Change background color on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
+        }
+
+        .big-image-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .big-image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+            transition: transform 0.3s; /* Add transition */
+        }
+
+        .big-image:hover {
+            transform: scale(1.05); /* Increase size on hover */
+        }
+
+        .description-box {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            MediGuide
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Products</a></li>
-            <li><a href="telemedicine.html">Telemedicine</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
     <header>
-        <h1>Telemedicine | HealthTech Solutions</h1>
+        <nav>
+            <div class="logo">
+                MediGuide
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Products</a></li>
+                <li><a href="telemedicine.html">Telemedicine</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
-        <h2>Welcome to Our Telemedicine Services</h2>
-        <p>This is a placeholder for information about our telemedicine services. Telemedicine allows you to access
-            medical care remotely, via video calls, phone calls, or online messaging. Our platform connects patients
-            with healthcare providers, making it convenient to receive medical advice, diagnosis, and treatment from the
-            comfort of your home.</p>
-        <p>Our telemedicine services include:</p>
-        <ul>
-            <li>Virtual consultations with healthcare professionals</li>
-            <li>Remote monitoring of vital signs and symptoms</li>
-            <li>Prescription refills and medication management</li>
-            <li>Follow-up appointments and ongoing care</li>
-        </ul>
-        <p>With telemedicine, you can save time, avoid unnecessary trips to the doctor's office, and receive timely
-            medical attention when you need it most.</p>
+        <h1>Telemedicine Health Solutions</h1>
+        <section class="doctor-section">
+            <div class="doctor">
+                <img src="doctor1.png" alt="Doctor 1">
+                <p>Dr. Emily Patel: Board-certified family physician with over a decade of telemedicine experience, offering compassionate and personalized primary care services tailored to all ages.</p>
+            </div>
+            <div class="doctor">
+                <img src="doctor2.png" alt="Doctor 2">
+                <p>Dr. Michael Chang: Licensed psychiatrist specializing in telepsychiatry, providing evidence-based treatments and medication management for depression, anxiety, bipolar disorder, and PTSD via virtual consultations.</p>
+            </div>
+            <div class="doctor">
+                <img src="doctor3.png" alt="Doctor 3">
+                <p>Dr. Sarah Johnson: Renowned telemedicine dermatologist known for diagnosing and treating skin conditions remotely, utilizing advanced technology for virtual skin exams and personalized skincare recommendations.</p>
+            </div>
+            <div class="doctor">
+                <img src="doctor4.png" alt="Doctor 4">
+                <p>Dr. David Lee: Telemedicine specialist in internal medicine focusing on chronic disease management and preventive care through remote consultations, emphasizing patient education and lifestyle modifications for optimal health outcomes.</p>
+            </div>
+        </section>
+
+        <!-- Big Image Section -->
+        <section class="big-image-section">
+            <h2>Drone Medicine Delivery</h2>
+            <img class="big-image" src="drone.png" alt="Drone Medicine Delivery">
+            <div class="description-box">
+                <h3>Revolutionizing Healthcare Delivery</h3>
+                <p>Drone medicine delivery is changing the landscape of healthcare by providing faster and more efficient ways to transport medical supplies, such as medications, blood samples, and vaccines, to remote or hard-to-reach areas. With drones, we can ensure timely delivery of life-saving treatments, especially in emergencies or during natural disasters, improving patient outcomes and saving lives.</p>
+            </div>
+        </section>
+
     </div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Products</a></li>
-                    <li><a href="telemedicine.html">Telemedicine</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <h3>Contact Us</h3>
-                <p>Email: mediguide@gmail.com</p>
-                <p>Phone: +1 234 567 890</p>
-            </div>
-            <div class="social-media">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#"><img src="1.png" alt="Facebook"></a></li>
-                    <li><a href="#"><img src="2.png" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="3.png" alt="Instagram"></a></li>
-                </ul>
-            </div>
-        </div>
         <div class="footer-bottom">
             <p>&copy; 2024 MediGuide. All rights reserved.</p>
         </div>
