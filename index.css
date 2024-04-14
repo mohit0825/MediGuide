@@ -19,7 +19,7 @@ section {
 }
 
 .content-left {
-    color: white;
+    color: rgb(10, 10, 10);
     margin-top: 10%;
     margin-left: 4%;
 }
@@ -47,7 +47,7 @@ section {
 .callbtn {
     height: 55px;
     width: 250px;
-    color: white;
+    color: rgb(3, 3, 3);
     background-color: transparent;
     border-radius: 40px;
     border-color: white;
@@ -59,7 +59,7 @@ button:hover {
 }
 
 .phone-icon {
-    padding: 3%;
+    padding: 2%;
     height: 30px;
     width: 30px;
 }
