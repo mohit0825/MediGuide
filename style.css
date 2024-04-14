@@ -7,38 +7,57 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
 /* Updated navigation bar styles */
 nav {
-    position: relative;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, -1%);
+    background-color: #2980b9;
+    /* Darker blue background */
+    padding: 20px;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    border-radius: 20px;
-    width: 40%;
-    background-color: rgba(95, 228, 240, 0.3);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    /* Align to both ends */
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    /* Ensure it's above other content */
+}
+
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
 
 nav ul li {
-    margin: 0;
+    margin-right: 20px;
 }
 
 nav ul li a {
-    display: block;
-    padding: 10px 15px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #1a5276;
+    /* Darker background on hover */
 }
 
 section {
@@ -236,6 +255,70 @@ section::before {
 .container .contactForm .formBox .inputBox input[type="submit"]:hover {
     background: #0d9480;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+ 
+:-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius: 10px;
+}
+  
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; 
+}
+
+footer {
+    color: white;
+    background-color: #2980b9;
+    margin-top: 5%;
+    padding: 40px 0;
+    width: 100%; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+}
+
+.footer-links ul,
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-links h3,
+.contact-info h3,
+.social-media h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.contact-info p {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 @media (max-width: 1200px) {
     .container {
