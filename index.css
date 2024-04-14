@@ -87,12 +87,14 @@ button:hover {
 }
 
 .sec2 {
+
     display: flex;
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 2rem;
 }
+
 
 .sec2u1,
 .sec2u2{
@@ -283,7 +285,8 @@ nav ul li a {
     width: 10px;
 }
 
-:-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
@@ -305,6 +308,7 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
 }
 
 .footer-links ul,
@@ -334,7 +338,6 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Styles */
 
 @media only screen and (max-width: 768px) {
     section {
@@ -404,3 +407,4 @@ footer {
         flex-direction: column;
     }
 }
+
