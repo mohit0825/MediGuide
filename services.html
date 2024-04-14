@@ -5,86 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Page</title>
     <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Arial', sans-serif;
             background-color: #3498db; /* Blue background */
+            color: #fff; /* White text color */
+            line-height: 1.6;
+            overflow-x: hidden; /* Hide horizontal scrollbar */
         }
+        
+        /* Navigation */
         nav {
-            position: relative;
-            top: 1%;
-            left: 50%;
-            transform: translate(-50%, -1%);
+            background-color: #2980b9; /* Darker blue background */
+            padding: 20px;
             display: flex;
-            justify-content: center;
-            margin-top: 20px; 
-            border-radius: 20px;
-            width: 30%; 
-            background-color: rgba(95, 228, 240, 0.3); 
-            backdrop-filter: blur(10px); 
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            justify-content: space-between; /* Align to both ends */
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999; /* Ensure it's above other content */
         }
-          
+        
+        .logo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
         nav ul {
-            list-style-type: none;
+            list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
         }
-          
+        
         nav ul li {
-            margin: 0;
+            margin-right: 20px;
         }
-          
+        
         nav ul li a {
-            display: block;
-            padding: 10px 15px;
             text-decoration: none;
-            color: #000;
+            color: #fff; /* White text color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #1a5276; /* Darker background on hover */
         }
 
+        /* Container Styles */
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            margin: 120px auto 50px; /* Adjusted margin for footer */
+            max-width: 1200px;
             padding: 20px;
-            background-color: #fff; /* White background for containers */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Drop shadow */
-        }
-        .box {
-            width: 300px;
-            height: 200px;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            position: relative;
+            background-color: #fff; /* White background */
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            border-radius: 10px;
             overflow: hidden; /* Hide overflowing content */
-            border-radius: 5px; /* Rounded corners */
+            transition: transform 0.3s ease;
+            position: relative;
         }
+        
+        .container:hover {
+            transform: translateY(-5px); /* Lift up on hover */
+        }
+        
+        .box {
+            flex: 1;
+            margin: 0 20px;
+        }
+        
         .box video {
             width: 100%;
-            height: 100%;
-            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            transition: transform 0.3s ease;
         }
+        
+        .box video:hover {
+            transform: scale(1.05); /* Zoom in on hover */
+        }
+        
         .info {
-            max-width: 400px;
+            flex: 1;
             padding: 20px;
+            color: #000; /* Black text color */
         }
-        h2 {
-            margin-top: 0;
+        
+        .info h2 {
+            color: #3498db; /* Blue heading color */
+            margin-bottom: 20px;
         }
-        p {
-            margin-bottom: 0;
+        
+        .info p {
+            margin-bottom: 20px;
         }
-        .container:nth-child(even) .box {
-            order: -1; /* Reverse order for even containers */
+
+        /* Footer */
+        footer {
+            background-color: #2980b9; /* Darker blue background */
+            padding: 40px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .footer-links {
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Animations */
+        @keyframes boxAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .animated-box {
+            animation: boxAnimation 2s infinite;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav>
+        <div class="logo">
+            MediGuide
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -92,8 +165,10 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Service Containers -->
     <div class="container">
-        <div class="box">
+        <div class="box animated-box">
             <video controls>
                 <source src="video 1 watch video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -104,20 +179,22 @@
             <p>Introducing the "HealthGuard Wearable Watch," a state-of-the-art health monitoring device designed to keep you informed about vital aspects of your well-being. This cutting-edge wearable seamlessly integrates into your daily routine, providing continuous tracking of key health metrics such as heart rate, steps taken, and sleep cycles. With its advanced sensors and algorithms, the watch can detect irregular heart rhythms and issue alerts for potential cardiac issues, ensuring timely medical intervention. Additionally, it offers hydration monitoring to prevent dehydration and personalized sleep analysis to optimize your rest. Sleek in design and packed with features, the HealthGuard Watch empowers you to take control of your health proactively, wherever life takes you.</p>
         </div>
     </div>
+
     <div class="container">
         <div class="info">
             <h2>HydraGuard Smart Bottle</h2>
             <p>The Smart Water Bottle is an innovative hydration solution designed to revolutionize the way we stay hydrated and maintain optimal health. Equipped with advanced technology, this intelligent bottle helps users track and maintain their hydration levels throughout the day. With its integrated sensors and smart monitoring system, the Smart Water Bottle provides real-time feedback and reminders to ensure users drink enough water to stay adequately hydrated. Additionally, this versatile bottle features temperature control capabilities, allowing users to maintain specific temperatures for their beverages, whether it's keeping water cool during workouts or enjoying a hot beverage on a cold day. With its sleek design and intuitive features, the Smart Water Bottle is the perfect companion for anyone looking to prioritize their health and wellness by staying hydrated and enjoying beverages at their preferred temperature.</p>
         </div>
-        <div class="box">
+        <div class="box animated-box">
             <video controls>
                 <source src="smart water bottle.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </div>
+
     <div class="container">
-        <div class="box">
+        <div class="box animated-box">
             <video controls>
                 <source src="head band.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -128,5 +205,23 @@
             <p>The Muse Headband is a cutting-edge healthtech product that revolutionizes the way we monitor and understand our body's vital signs. Designed to measure brain waves and heart rate, the Muse Headband provides users with comprehensive insights into their overall health and well-being. By analyzing real-time data, this innovative device offers valuable information about various medical conditions, including stress levels, cognitive function, and emotional state. With its non-invasive design and user-friendly interface, the Muse Headband empowers individuals to take control of their health by providing actionable insights and personalized recommendations. Whether you're looking to manage stress, improve cognitive performance, or optimize your overall health, the Muse Headband is your trusted companion on the journey to wellness.</p>
         </div>
     </div>
+    <script>
+        window.embeddedChatbotConfig = {
+          chatbotId: "kfGQ1kK8IPNQx3hlWDdpy",
+          domain: "www.chatbase.co"
+        }
+      </script>
+      <script src="https://www.chatbase.co/embed.min.js" chatbotId="kfGQ1kK8IPNQx3hlWDdpy" domain="www.chatbase.co" defer>
+      </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Products</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
 </body>
 </html>
