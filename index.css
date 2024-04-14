@@ -17,21 +17,21 @@ section {
     height: 780px;
 }
 
-.content-left{
+.content-left {
     color: white;
     margin-top: 10%;
     margin-left: 4%;
 }
 
-.content-left h1{
+.content-left h1 {
     font-size: 5rem;
 }
 
-.content-left p{
+.content-left p {
     margin-top: 1%;
 }
 
-.joinusbtn{
+.joinusbtn {
     background-color: #3B81F6;
     height: 60px;
     width: 150px;
@@ -43,7 +43,7 @@ section {
     border-radius: 40px;
 }
 
-.callbtn{
+.callbtn {
     height: 55px;
     width: 250px;
     color: white;
@@ -53,26 +53,26 @@ section {
     margin-left: 1%;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.phone-icon{
+.phone-icon {
     padding: 3%;
     height: 30px;
     width: 30px;
 }
 
-.prom ul{
+.prom ul {
     list-style: none;
     display: flex;
 }
 
-.prom ul li{
+.prom ul li {
     margin: 20px;
 }
 
-.prom{
+.prom {
     display: flex;
     justify-content: center;
     margin-top: 2%;
@@ -80,52 +80,52 @@ button:hover{
     font-weight: bold;
 }
 
-.tick{
+.tick {
     color: greenyellow;
     height: 30px;
     width: 30px;
 }
 
-.sec2{
+.sec2 {
+    display: flex;
     margin-top: 10%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 2rem;
 }
 
-#aidc1{
-    height: 50%;
-    width: 43%;
+.sec2u1,
+.sec2u2{
+    flex: 1;
+}
+
+#aidc1 {
+    height: 70vh;
+    width: 39vw;
     border-radius: 10px;
 }
 
-#aidc2{
-    position: absolute;
-    top: 135%;
-    margin-left: 5%;
-    height: 60%;
-    width: 45%;
+#aidc2 {
+    margin-top: 2%;
+    height: 57vh;
+    width: 45vw;
     border-radius: 10px;
 }
 
-.sec2 p{
-    position: absolute;
-    left: 49%;
-    top: 203%;
+.sec2 p {
+    margin-top: 5%;
     font-size: 1.4rem;
     color: gray;
 }
 
-.sec2 h2{
-    position: absolute;
+.sec2 h2 {
+    margin-top: 5%;
     text-decoration: none;
-    left: 49%;
-    top: 225%;
     font-size: 1.4rem;
     color: blue;
 }
 
-.sec3{
+.sec3 {
     background-color: rgb(14, 123, 233);
     max-height: 85vh;
     height: auto;
@@ -133,25 +133,25 @@ button:hover{
     margin-top: 5%;
 }
 
-.content-sec3 h1{
+.content-sec3 h1 {
     padding-top: 5%;
     color: white;
     font-size: 3rem;
 }
 
-#sec3-para{
+#sec3-para {
     color: white;
     font-size: 1rem;
     font-weight: 200;
     margin-top: 1%;
 }
 
-.sec3-provide-icons{
+.sec3-provide-icons {
     display: flex;
     justify-content: space-around;
 }
 
-.sec3-provide-icons svg{
+.sec3-provide-icons svg {
     color: green;
     background-color: white;
     border-radius: 200px;
@@ -160,7 +160,7 @@ button:hover{
     margin-top: 5%;
 }
 
-.sec3-provide-headings{
+.sec3-provide-headings {
     display: flex;
     justify-content: space-around;
     margin-top: 2%;
@@ -168,30 +168,34 @@ button:hover{
     font-size: 0.8rem;
 }
 
-#prh21{
+#prh21 {
     margin-left: 8%;
 }
-#prh22{
+
+#prh22 {
     margin-left: 3%;
 }
-#prh23{
+
+#prh23 {
     margin-left: 1%;
 }
 
-.sec3-provide-desc{
+.sec3-provide-desc {
     display: flex;
     justify-content: space-around;
     color: rgba(255, 255, 255, 0.819);
     margin-top: 2%;
 }
 
-#prp1{
+#prp1 {
     margin-left: 5%;
 }
-#prp2{
+
+#prp2 {
     margin-left: 3%;
 }
-#prp3{
+
+#prp3 {
     margin-left: 4%;
 }
 
@@ -202,30 +206,30 @@ button:hover{
     margin-top: 50px;
     background-color: white;
     width: 80%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     border: 2px solid rgb(14, 123, 233);
 }
-  
+
 .leftsection {
-    flex: 1; 
+    flex: 1;
 }
-  
+
 .rightsection {
-    flex: 1; 
+    flex: 1;
 }
-  
+
 .leftsection video {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
-  
+
 .rightsection {
-    text-align: center; 
+    text-align: center;
 }
-  
+
 .rightsection p {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .rightsection button {
@@ -247,27 +251,27 @@ nav {
     transform: translate(-50%, -1%);
     display: flex;
     justify-content: center;
-    margin-top: 20px; 
+    margin-top: 20px;
     border-radius: 20px;
     height: 40px;
     font-size: 1.1rem;
-    width: 25%; 
-    background-color: rgba(95, 228, 240, 0.3); 
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 25%;
+    background-color: rgba(95, 228, 240, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
+
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-  
+
 nav ul li {
     margin: 0;
 }
-  
+
 nav ul li a {
     display: block;
     padding: 10px 15px;
@@ -278,21 +282,18 @@ nav ul li a {
 ::-webkit-scrollbar {
     width: 10px;
 }
-  
- 
+
 :-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
 }
-  
 
 ::-webkit-scrollbar-thumb {
-    background: #007bff; 
+    background: #007bff;
     border-radius: 10px;
 }
-  
-  
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #0056b3; 
+    background: #0056b3;
 }
 
 footer {
@@ -300,7 +301,7 @@ footer {
     padding: 40px 0;
     margin: 5%;
 }
-  
+
 .footer-content {
     display: flex;
     justify-content: space-around;
@@ -311,25 +312,95 @@ footer {
     list-style: none;
     padding: 0;
 }
-  
+
 .footer-links h3,
 .contact-info h3,
 .social-media h3 {
     margin-bottom: 10px;
 }
-  
+
 .footer-links a,
 .contact-info p {
     color: #333;
     text-decoration: none;
 }
-  
+
 .footer-links a:hover {
     text-decoration: underline;
 }
-  
+
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
 }
-  
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    section {
+        height: 500px;
+    }
+
+    .content-left {
+        margin-top: 20%;
+        margin-left: 2%;
+        text-align: center;
+    }
+
+    .content-left h1 {
+        font-size: 3rem;
+    }
+
+    .joinusbtn,
+    .callbtn {
+        width: 120px;
+        margin-top: 10%;
+    }
+
+    .phone-icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    .prom ul li {
+        margin: 10px;
+    }
+
+    .sec2 {
+        margin-top: 20%;
+        margin-left: 2%;
+        margin-right: 2%;
+        font-size: 1.5rem;
+    }
+
+    #aidc1,
+    #aidc2 {
+        height: 40%;
+        width: 90%;
+    }
+
+    .sec2 p,
+    .sec2 h2 {
+        position: static;
+        text-align: center;
+    }
+
+    .sec3-provide-icons svg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .sec3-provide-headings {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec3-provide-desc {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+}
